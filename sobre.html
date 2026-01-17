@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina teste para as futuras garotas de programa">
+    <meta name="author" content="Garotas de Programa">
+    <meta https-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="keywords"
+        content="garotas na programação, programação, min-site, estudos, html, css, testando conhecimentos">
+    <title>Garotas na Programação</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Garotas na Programação</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="cotato.html">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <button onclick="menuShow()"><img class="mobile-menu-icon" src="./img/menu_white_36dp.svg"></button>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cotato.html">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div>
+        <h2>Saiba quem somos e que tipo de programa fazemos.</h2>
+    </div>
+    <section class="sobre">
+        <div class="GP">
+            <img src="./img/anonimo.png.png">
+            <h3>HiasWitch</h3>
+            <p>Este site é para informar e entreter.<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus amet ipsa recusandae
+                ullam dolorum eum non exercitationem aut quam nemo quas reprehenderit eos tempore dolore assumenda, a
+                iure! A. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, <br>nulla in consequatur
+                possimus a pariatur dignissimos eaque officia ducimus unde ipsa eveniet quisquam exercitationem sunt
+                quaerat delectus ut dolor cupiditate?</p>
+        </div>
+        <div class="GP">
+            <img src="./img/anonimo.png.png">
+            <h3>BellaMaluca</h3>
+            <p>Divertida, meio maluca, curiosa e de mente ativa e abrta para novas ideias. Estudo nas minhas horas vagas
+                e isso tem sido muito divertido e enrriquecedor.</p>
+        </div>
+        <div class="GP">
+            <img src="./img/anonimo.png.png">
+            <h3>LuziNetwork</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus amet ipsa recusandae
+                ullam dolorum eum non exercitationem aut quam nemo quas reprehenderit eos tempore dolore assumenda, a
+                iure! A. Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Architecto, nulla in consequatur
+                possimus a pariatur dignissimos eaque officia ducimus unde ipsa eveniet quisquam exercitationem sunt
+                quaerat delectus ut dolor cupiditate?</p>
+        </div>
+        <div class="GP">
+            <img src="./img/anonimo.png.png">
+            <h3>Gatuna</h3>
+            <p>Amante dos games e dos designs está a gatuna. Representate dos games e desenhistas</p>
+        </div>
+    </section>
+    <div class="zap">
+
+        <img src="./img/whatsrosa.png"><a href="#" target="_blank"></a>
+    </div>
+    <footer>
+        <a href="https://youtube.com" target="_blank" rel="noopener"><img src="./img/icon-youtube.png">
+            <p>Youtube</p>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="./img/icon-instagram.png">
+            <p>instagram</p>
+        </a>
+        <a href="https://www.github.com" target="_blank" rel="noopener"><img src="./img/icon-git.png">
+            <p>GitHub</p>
+        </a>
+    </footer>
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.mobile-menu-icon').src = "img/menu_white_36dp.svg";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.mobile-menu-icon').src = "img/close_white_36dp.svg";
+            }
+        }
+    </script>
+</body>
+
+</html>

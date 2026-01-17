@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina teste para as futuras garotas de programa">
+    <meta name="author" content="Garotas de Programa">
+    <meta https-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="keywords"
+        content="garotas na programação, programação, min-site, estudos, html, css, testando conhecimentos">
+    <title>Garotas na Programação</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Garotas na Programação</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="cotato.html">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-menu">
+            <button onclick="menuShow()"><img class="mobile-menu-icon" src="./img/menu_white_36dp.svg"></button>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cotato.html">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="box-img">
+            <img id="anonimo" src="./img/anonimo2.webp">
+        </div>
+        <div class="box-txt">
+            <h4>Faça uma análise</h4>
+
+            <h3>Fazemos programa, mas não rodamos bolsinha!</h3>
+            <p>Este site é um teste e uma zoeira. Eu treino enquanto dou breves risadas com o conteúdo.
+            </p>
+
+            <a href="cotato.html" class="btn-hero">Agende aqui</a>
+        </div>
+    </section>
+    <section class="especialidades">
+        <div class="box-item1">
+            <h3>Criação de sites</h3>
+            <p>
+                Neste site fiz o uso de HTML e CSS e um pouquinho de JavaScript. Estou treinando diariamente nos
+                momentos de folgas para aprender programação. a primeira ideia que tive foi juntar o estudo com a
+                zoeira. dessa forma seria mais divertido!
+                E eu estava certa. Juntar as duas coisas tornou tudo mais produtivo.
+            </p>
+        </div>
+        <div class="box-item1">
+            <h3>Planejamentos</h3>
+            <p>Meus estudo precisam ter horários definidos, além de contar com o descanço no tempo certo, para não
+                cansar
+                a mente.
+            </p>
+        </div>
+        <div class="box-item1">
+            <h3>Designers</h3>
+            <p>As arte são em sua maioria de um banco gratuito de imagens. Mas inicialmente precisei por imagens de
+                memes para descontração, no momento de criação.
+            </p>
+        </div>
+        <a href="cotato.html" class="btn-hero2">Agende aqui</a>
+    </section>
+    <div class="zap">
+
+        <img src="./img/whatsrosa.png"><a href="#" target="_blank"></a>
+    </div>
+
+    <footer>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener"><img src="./img/icon-youtube.png">
+            <p>Youtube</p>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="./img/icon-instagram.png">
+            <p>instagram</p>
+        </a>
+        <a href="https://www.github.com" target="_blank" rel="noopener"><img src="./img/icon-git.png">
+            <p>GitHub</p>
+        </a>
+    </footer>
+    <script>
+        const anonimo = document.getElementById('anonimo');
+        anonimo.addEventListener('mouseover', function () { anonimo.src = "img/anonimo1.webp" });
+        anonimo.addEventListener('mouseout', function () { anonimo.src = "img/anonimo2.webp" });
+    </script>
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.mobile-menu-icon').src = "img/menu_white_36dp.svg";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.mobile-menu-icon').src = "img/close_white_36dp.svg";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

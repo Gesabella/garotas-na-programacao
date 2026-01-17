@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina teste para as futuras garotas de programa">
+    <meta name="author" content="Garotas de Programa">
+    <meta https-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="keywords"
+        content="garotas na programação, programação, min-site, estudos, html, css, testando conhecimentos">
+    <title>Garotas na Programação</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Garotas na Programação</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="cotato.html">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <button onclick="menuShow()"><img class="mobile-menu-icon" src="./img/menu_white_36dp.svg"></button>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cotato.html">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <h3 class="atençao">Atenção!<br>Não rodamos bolsinha!</h3>
+    <p>
+        Aqui teremos grande prazer em ajudar você a se posicionar on-line.
+        Prencha com seus dados o formulario abaixo para falar com a gente.
+    </p>
+    <div>
+        <form action="arquivo.php">
+            <label for="campo_nome">Nome:</label>
+            <input id="campo_nome" type="text" placeholder="Diga seu nome" required>
+            <br><br>
+            <label for="campo_sobrenome">Sobrenome:</label>
+            <input id="campo_sobrenome" type="text" placeholder="Diga seu sobrenome" required>
+            <br><br>
+            <label for="campo_email">e-mail:</label>
+            <input id="campo_email" type="email" placeholder="Diga seu email" required>
+            <br><br>
+            <label for="campo_senha">senha:</label>
+            <input id="campo_senha" type="password" placeholder="Diga sua senha" required>
+            <br><br>
+            <label for="campo_enviar">enviar:</label>
+            <input id="campo_enviar" type="submit">
+        </form>
+    </div>
+    <br>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur est qui accusamus quia optio sunt? Amet quasi
+    assumenda aperiam, nisi eius ducimus voluptatibus? Error repellat adipisci quae non perspiciatis distinctio!
+
+    <h5>Se quiser o contato por causa de C#, vai precisar chamar outras garotas de programa!
+
+
+        <footer>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener"><img src="./img/icon-youtube.png">
+                <p>Youtube</p>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="./img/icon-instagram.png">
+                <p>instagram</p>
+            </a>
+            <a href="https://www.github.com" target="_blank" rel="noopener"><img src="./img/icon-git.png">
+                <p>GitHub</p>
+            </a>
+        </footer>
+        <div class="zap">
+
+            <img src="./img/whatsrosa.png"><a href="#" target="_blank"></a>
+        </div>
+        <script>
+            function menuShow() {
+                let menuMobile = document.querySelector('.mobile-menu');
+                if (menuMobile.classList.contains('open')) {
+                    menuMobile.classList.remove('open');
+                    document.querySelector('.mobile-menu-icon').src = "img/menu_white_36dp.svg";
+                } else {
+                    menuMobile.classList.add('open');
+                    document.querySelector('.mobile-menu-icon').src = "img/close_white_36dp.svg";
+                }
+            }
+        </script>
+</body>
+
+</html>
