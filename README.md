@@ -30,4 +30,4 @@ Este projeto serve como **demonstração prática** dos conceitos básicos de fr
 
 ## 📦 Como Visualizar
 
-[![Vizualizar](https://img.shields.io/badge/Ver_projeto-000?style=for-the-badge&logo=microsoft-outlook&logoColor=FF00F6&color:FFF)]()
+[![Vizualizar](https://img.shields.io/badge/Ver_projeto-000?style=for-the-badge&logo=microsoft-outlook&logoColor=FF00F6&color:FFF)](https://gesabella.github.io/garotas-na-programacao/)
