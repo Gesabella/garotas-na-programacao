@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 body {
@@ -11,7 +10,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-
 }
 
 header {
@@ -54,9 +52,6 @@ nav a:hover {
 
 h1 {
     margin-left: 30px;
-    /* border: solid red; */
-
-
 }
 
 nav ul {
@@ -64,7 +59,6 @@ nav ul {
     display: flex;
     padding: 10px 20px 10px 20px;
     justify-content: space-between;
-
 }
 
 .hero {
@@ -73,7 +67,6 @@ nav ul {
     height: 400px;
     justify-content: center;
     margin-bottom: 20px;
-
 }
 
 .box-img {
@@ -81,14 +74,12 @@ nav ul {
     width: 35%;
     justify-content: center;
     padding: 25px;
-    /* border: solid red; */
 }
 
 .box-txt {
     width: 35%;
     flex-flow: column;
     padding: 15px;
-    /* border: solid green; */
 }
 
 section div p {
@@ -124,15 +115,6 @@ h2 {
     color: #8b045d;
     margin: 10px;
     text-align: center;
-
-}
-
-form {
-    /* border: solid 2px #e907bf; */
-    padding: 20px;
-    text-align: left;
-    color: #e907bf;
-    font-size: 15px;
 }
 
 .zap {
@@ -161,7 +143,6 @@ form {
     text-align: center;
     transition: 0.5s all;
     align-items: center;
-
 }
 
 .btn-hero:hover {
@@ -170,7 +151,6 @@ form {
 }
 
 .btn-hero2 {
-
     border-radius: 10px;
     background-color: #8b045d;
     color: white;
@@ -205,7 +185,6 @@ form {
     justify-content: center;
     margin-bottom: 20px;
     flex-flow: row wrap;
-    /* border: solid red; */
 }
 
 .box-item1 {
@@ -225,12 +204,48 @@ section a {
     color: white;
     transition: 0.5s all;
     align-items: center;
-
 }
 
 section a:hover {
     color: #8b045d;
     font-size: 18p;
+}
+
+.hero-contato {
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formulario {
+    display: flex;
+    width: 35%;
+}
+
+.contato-txt {
+    font-size: large;
+    line-height: 2.0;
+    display: flex;
+    width: 35%;
+}
+
+form {
+    padding: 20px;
+    text-align: right;
+    color: #e907bf;
+    font-size: 15px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+form input {
+    border-radius: 5px;
 }
 
 footer {
@@ -251,7 +266,6 @@ footer p {
 footer img {
     width: 35px;
     justify-content: center;
-
 }
 
 footer a {
@@ -308,10 +322,21 @@ footer a:hover {
     footer {
         font-size: 18px;
         text-align: center;
-
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .formulario {
+        width: 85%;
+    }
+
+    .contato-txt {
+        width: 85%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 740px) {
@@ -321,7 +346,6 @@ footer a:hover {
         /* border: solid grey; */
         display: inline;
         margin: 0 100px 0 100px;
-
     }
 
     header {
@@ -343,7 +367,6 @@ footer a:hover {
         right: 10px;
         top: 5px;
         border: none;
-
     }
 
     .mobile-menu-icon {
@@ -352,12 +375,9 @@ footer a:hover {
         width: 25px;
         border: none;
         cursor: pointer;
-        /* border: solid rgb(85, 13, 220); */
     }
 
     .mobile-menu ul {
-
-        /* border: solid red; */
         flex-direction: column;
         text-align: center;
         padding: 1.5rem 4rem;
@@ -371,7 +391,6 @@ footer a:hover {
         padding: 1.5rem 4rem;
     }
 
-
     .mobile-menu a {
         text-decoration: none;
         color: white;
@@ -383,7 +402,6 @@ footer a:hover {
         color: #e907bf;
         font-size: 18px;
         font-weight: 500;
-
     }
 
     .open {
@@ -397,7 +415,6 @@ footer a:hover {
     .nav-bar {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 570px) {
